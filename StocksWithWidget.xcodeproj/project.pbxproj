@@ -26,6 +26,12 @@
 		CB7480382A6726850025DEBE /* StockWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480372A6726850025DEBE /* StockWidgetView.swift */; };
 		CB74803A2A672A140025DEBE /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480392A672A140025DEBE /* Chart.swift */; };
 		CB74803B2A672A140025DEBE /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480392A672A140025DEBE /* Chart.swift */; };
+		CB74803D2A67B0A30025DEBE /* StockMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74803C2A67B0A30025DEBE /* StockMetadata.swift */; };
+		CB74803E2A67B0A30025DEBE /* StockMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74803C2A67B0A30025DEBE /* StockMetadata.swift */; };
+		CB7480412A67B6620025DEBE /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480402A67B6620025DEBE /* StockData.swift */; };
+		CB7480422A67B6620025DEBE /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480402A67B6620025DEBE /* StockData.swift */; };
+		CB7480442A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */; };
+		CB7480452A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,9 @@
 		CB7480352A67265F0025DEBE /* TimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEntry.swift; sourceTree = "<group>"; };
 		CB7480372A6726850025DEBE /* StockWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidgetView.swift; sourceTree = "<group>"; };
 		CB7480392A672A140025DEBE /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		CB74803C2A67B0A30025DEBE /* StockMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMetadata.swift; sourceTree = "<group>"; };
+		CB7480402A67B6620025DEBE /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTimelineValuesData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +163,7 @@
 				CB665A4B2A6720FB00D9623D /* StocksWithWidgetApp.swift */,
 				CB665A4D2A6720FB00D9623D /* ContentView.swift */,
 				CB7480392A672A140025DEBE /* Chart.swift */,
+				CB74803F2A67B6590025DEBE /* Models */,
 				CB665A4F2A6720FC00D9623D /* Assets.xcassets */,
 				CB665A512A6720FC00D9623D /* Preview Content */,
 			);
@@ -207,6 +217,16 @@
 				CB74802B2A6723CA0025DEBE /* Info.plist */,
 			);
 			path = StocksWidget;
+			sourceTree = "<group>";
+		};
+		CB74803F2A67B6590025DEBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB7480402A67B6620025DEBE /* StockData.swift */,
+				CB74803C2A67B0A30025DEBE /* StockMetadata.swift */,
+				CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,8 +390,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB74803D2A67B0A30025DEBE /* StockMetadata.swift in Sources */,
 				CB665A4E2A6720FB00D9623D /* ContentView.swift in Sources */,
 				CB665A4C2A6720FB00D9623D /* StocksWithWidgetApp.swift in Sources */,
+				CB7480442A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */,
+				CB7480412A67B6620025DEBE /* StockData.swift in Sources */,
 				CB74803A2A672A140025DEBE /* Chart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,13 +420,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB74803E2A67B0A30025DEBE /* StockMetadata.swift in Sources */,
 				CB7480262A6723CA0025DEBE /* StocksWidget.swift in Sources */,
 				CB74803B2A672A140025DEBE /* Chart.swift in Sources */,
+				CB7480452A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */,
 				CB7480242A6723CA0025DEBE /* StocksWidgetBundle.swift in Sources */,
 				CB7480362A67265F0025DEBE /* TimelineEntry.swift in Sources */,
 				CB7480282A6723CA0025DEBE /* AppIntent.swift in Sources */,
 				CB7480342A6725D00025DEBE /* TimelineProvider.swift in Sources */,
 				CB7480382A6726850025DEBE /* StockWidgetView.swift in Sources */,
+				CB7480422A67B6620025DEBE /* StockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
