@@ -32,6 +32,8 @@
 		CB7480422A67B6620025DEBE /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480402A67B6620025DEBE /* StockData.swift */; };
 		CB7480442A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */; };
 		CB7480452A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */; };
+		CB7480482A6882A70025DEBE /* StocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480472A6882A70025DEBE /* StocksService.swift */; };
+		CB7480492A6882A70025DEBE /* StocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7480472A6882A70025DEBE /* StocksService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,7 @@
 		CB74803C2A67B0A30025DEBE /* StockMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMetadata.swift; sourceTree = "<group>"; };
 		CB7480402A67B6620025DEBE /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTimelineValuesData.swift; sourceTree = "<group>"; };
+		CB7480472A6882A70025DEBE /* StocksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,7 @@
 				CB665A4B2A6720FB00D9623D /* StocksWithWidgetApp.swift */,
 				CB665A4D2A6720FB00D9623D /* ContentView.swift */,
 				CB7480392A672A140025DEBE /* Chart.swift */,
+				CB7480462A68828D0025DEBE /* APIService */,
 				CB74803F2A67B6590025DEBE /* Models */,
 				CB665A4F2A6720FC00D9623D /* Assets.xcassets */,
 				CB665A512A6720FC00D9623D /* Preview Content */,
@@ -227,6 +231,14 @@
 				CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CB7480462A68828D0025DEBE /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				CB7480472A6882A70025DEBE /* StocksService.swift */,
+			);
+			path = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +405,7 @@
 				CB74803D2A67B0A30025DEBE /* StockMetadata.swift in Sources */,
 				CB665A4E2A6720FB00D9623D /* ContentView.swift in Sources */,
 				CB665A4C2A6720FB00D9623D /* StocksWithWidgetApp.swift in Sources */,
+				CB7480482A6882A70025DEBE /* StocksService.swift in Sources */,
 				CB7480442A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */,
 				CB7480412A67B6620025DEBE /* StockData.swift in Sources */,
 				CB74803A2A672A140025DEBE /* Chart.swift in Sources */,
@@ -421,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB74803E2A67B0A30025DEBE /* StockMetadata.swift in Sources */,
+				CB7480492A6882A70025DEBE /* StocksService.swift in Sources */,
 				CB7480262A6723CA0025DEBE /* StocksWidget.swift in Sources */,
 				CB74803B2A672A140025DEBE /* Chart.swift in Sources */,
 				CB7480452A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */,
