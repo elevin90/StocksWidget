@@ -21,6 +21,6 @@ struct StocksWidget: Widget {
 #Preview(as: .systemSmall) {
     StocksWidget()
 } timeline: {
-    SimpleEntry(date: .now,
-                configuration: ConfigurationAppIntent())
+    StockTimelineEntry(date: .now,
+                       configuration: ConfigurationAppIntent(), stockData: nil)
 }

@@ -7,7 +7,8 @@
 
 import WidgetKit
 
-struct SimpleEntry: TimelineEntry {
+struct StockTimelineEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
+    let stockData: StockData?
 }
