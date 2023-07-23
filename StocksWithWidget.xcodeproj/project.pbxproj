@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB28BA9F2A6D634800DCE0EE /* StockWidgetSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28BA9E2A6D634800DCE0EE /* StockWidgetSmallView.swift */; };
+		CB28BAA12A6D635400DCE0EE /* StockWidgetMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28BAA02A6D635400DCE0EE /* StockWidgetMediumView.swift */; };
+		CB28BAA42A6DBC2200DCE0EE /* StockDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28BAA32A6DBC2200DCE0EE /* StockDetail.swift */; };
+		CB28BAA62A6DBC5E00DCE0EE /* CharacterDetailQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28BAA52A6DBC5E00DCE0EE /* CharacterDetailQuery.swift */; };
 		CB665A4C2A6720FB00D9623D /* StocksWithWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB665A4B2A6720FB00D9623D /* StocksWithWidgetApp.swift */; };
 		CB665A4E2A6720FB00D9623D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB665A4D2A6720FB00D9623D /* ContentView.swift */; };
 		CB665A502A6720FC00D9623D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB665A4F2A6720FC00D9623D /* Assets.xcassets */; };
@@ -75,6 +79,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB28BA9E2A6D634800DCE0EE /* StockWidgetSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidgetSmallView.swift; sourceTree = "<group>"; };
+		CB28BAA02A6D635400DCE0EE /* StockWidgetMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidgetMediumView.swift; sourceTree = "<group>"; };
+		CB28BAA32A6DBC2200DCE0EE /* StockDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetail.swift; sourceTree = "<group>"; };
+		CB28BAA52A6DBC5E00DCE0EE /* CharacterDetailQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailQuery.swift; sourceTree = "<group>"; };
 		CB665A482A6720FB00D9623D /* StocksWithWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksWithWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB665A4B2A6720FB00D9623D /* StocksWithWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksWithWidgetApp.swift; sourceTree = "<group>"; };
 		CB665A4D2A6720FB00D9623D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +145,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB28BA9B2A6D630F00DCE0EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB7480372A6726850025DEBE /* StockWidgetView.swift */,
+				CB28BA9E2A6D634800DCE0EE /* StockWidgetSmallView.swift */,
+				CB28BAA02A6D635400DCE0EE /* StockWidgetMediumView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB28BAA22A6DBB9E00DCE0EE /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				CB7480272A6723CA0025DEBE /* AppIntent.swift */,
+				CB28BAA32A6DBC2200DCE0EE /* StockDetail.swift */,
+				CB28BAA52A6DBC5E00DCE0EE /* CharacterDetailQuery.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
 		CB665A3F2A6720FB00D9623D = {
 			isa = PBXGroup;
 			children = (
@@ -213,10 +241,10 @@
 			children = (
 				CB7480232A6723CA0025DEBE /* StocksWidgetBundle.swift */,
 				CB7480252A6723CA0025DEBE /* StocksWidget.swift */,
-				CB7480272A6723CA0025DEBE /* AppIntent.swift */,
+				CB28BAA22A6DBB9E00DCE0EE /* Intents */,
 				CB7480332A6725D00025DEBE /* TimelineProvider.swift */,
 				CB7480352A67265F0025DEBE /* StockTimelineEntry.swift */,
-				CB7480372A6726850025DEBE /* StockWidgetView.swift */,
+				CB28BA9B2A6D630F00DCE0EE /* Views */,
 				CB7480292A6723CA0025DEBE /* Assets.xcassets */,
 				CB74802B2A6723CA0025DEBE /* Info.plist */,
 			);
@@ -436,12 +464,16 @@
 				CB74803E2A67B0A30025DEBE /* StockMetadata.swift in Sources */,
 				CB7480492A6882A70025DEBE /* StocksService.swift in Sources */,
 				CB7480262A6723CA0025DEBE /* StocksWidget.swift in Sources */,
+				CB28BAA42A6DBC2200DCE0EE /* StockDetail.swift in Sources */,
 				CB74803B2A672A140025DEBE /* Chart.swift in Sources */,
+				CB28BAA62A6DBC5E00DCE0EE /* CharacterDetailQuery.swift in Sources */,
 				CB7480452A67B67E0025DEBE /* StockTimelineValuesData.swift in Sources */,
 				CB7480242A6723CA0025DEBE /* StocksWidgetBundle.swift in Sources */,
 				CB7480362A67265F0025DEBE /* StockTimelineEntry.swift in Sources */,
 				CB7480282A6723CA0025DEBE /* AppIntent.swift in Sources */,
 				CB7480342A6725D00025DEBE /* TimelineProvider.swift in Sources */,
+				CB28BA9F2A6D634800DCE0EE /* StockWidgetSmallView.swift in Sources */,
+				CB28BAA12A6D635400DCE0EE /* StockWidgetMediumView.swift in Sources */,
 				CB7480382A6726850025DEBE /* StockWidgetView.swift in Sources */,
 				CB7480422A67B6620025DEBE /* StockData.swift in Sources */,
 			);

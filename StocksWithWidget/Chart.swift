@@ -11,6 +11,9 @@ struct LineChart: Shape {
     var values: [Double]
     
     func path(in rect: CGRect) -> Path {
+        guard !values.isEmpty else {
+            return Path()
+        }
         var path = Path()
         let start = CGPoint(x: rect.minX,
                             y: rect.maxY - (CGFloat(values[0]) * rect.maxY))

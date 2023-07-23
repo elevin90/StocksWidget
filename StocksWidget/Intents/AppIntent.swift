@@ -11,8 +11,14 @@ import AppIntents
 struct ConfigurationAppIntent: WidgetConfigurationIntent {
     static var title: LocalizedStringResource = "Configuration"
     static var description = IntentDescription("This is an example widget.")
-
+    
     // An example configurable parameter.
-    @Parameter(title: "Stock", default: "IBM")
-    var stock: String
+    @Parameter(title: "Stock")
+    var stock: StockDetail?
+    
+    init() {}
+    
+    init(stockDetail: StockDetail) {
+        self.stock = stockDetail
+    }
 }

@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 final class StocksService {
-    func getStockData(for symbol: String) -> AnyPublisher<StockData, Error> {
+    static func getStockData(for symbol: String) -> AnyPublisher<StockData, Error> {
         let urlString = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=J8Z0G4S0U0D80LCP"
         guard let url = URL(string: urlString) else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()

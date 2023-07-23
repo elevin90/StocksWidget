@@ -12,15 +12,22 @@ struct StocksWidget: Widget {
     let kind: String = "StocksWidget"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
+        AppIntentConfiguration(kind: kind,
+                               intent: ConfigurationAppIntent.self,
+                               provider: Provider()) { entry in
             StocksWidgetEntryView(entry: entry)
         }
+        .supportedFamilies([.systemSmall, .systemMedium])
+        .configurationDisplayName("Stocks Widget")
+        .description("Checks prices for selected stocks")
     }
 }
 
 #Preview(as: .systemSmall) {
     StocksWidget()
-} timeline: {
+}
+timeline: {
     StockTimelineEntry(date: .now,
-                       configuration: ConfigurationAppIntent(), stockData: nil)
+                       configuration: ConfigurationAppIntent(),
+                       stockData: nil)
 }
