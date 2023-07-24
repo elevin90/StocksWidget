@@ -16,6 +16,14 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onOpenURL(perform: { url in
+            guard url.scheme == "stockswidgetapp",
+                  url.host() == "symbol" else {
+                return
+            }
+            let symbol = url.pathComponents[1]
+            print("Upload data for \(symbol)")
+        })
     }
 }
 

@@ -21,6 +21,13 @@ struct StockData: Decodable, Identifiable {
         timelineValuesData.first?.value.close ?? "Nan"
     }
     
+    var url: URL {
+        guard let url = URL(string: "stockswidgetapp://symbol/\(metaData.symbol)") else {
+            fatalError("Failed to get StockData url")
+        }
+        return url
+    }
+    
     var closeValues: [Double] {
         let rawValues = timelineValuesData.values.compactMap { Double($0.close) }
         let max = rawValues.max() ?? 0.0

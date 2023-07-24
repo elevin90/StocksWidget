@@ -15,10 +15,12 @@ struct StocksWidgetEntryView : View {
         switch widgetFamily {
         case .systemSmall:
             StockWidgetSmallView(entry: entry)
+                .widgetURL(entry.stockData?.url)
         case .systemMedium:
             Text("systemMedium")
         default:
             Text("systemMedium")
         }
+        
     }
 }
