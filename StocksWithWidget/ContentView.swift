@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
     var body: some View {
@@ -24,6 +25,13 @@ struct ContentView: View {
             let symbol = url.pathComponents[1]
             print("Upload data for \(symbol)")
         })
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Reload widget") {
+                    WidgetCenter.shared.reloadAllTimelines()
+                }
+            }
+        }
     }
 }
 

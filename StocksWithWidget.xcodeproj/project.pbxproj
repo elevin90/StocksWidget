@@ -109,6 +109,7 @@
 		CB7480402A67B6620025DEBE /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		CB7480432A67B67E0025DEBE /* StockTimelineValuesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTimelineValuesData.swift; sourceTree = "<group>"; };
 		CB7480472A6882A70025DEBE /* StocksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksService.swift; sourceTree = "<group>"; };
+		CBB865F92A70641A00A0F6CB /* StocksWithWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StocksWithWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +192,7 @@
 		CB665A4A2A6720FB00D9623D /* StocksWithWidget */ = {
 			isa = PBXGroup;
 			children = (
+				CBB865F92A70641A00A0F6CB /* StocksWithWidget.entitlements */,
 				CB665A4B2A6720FB00D9623D /* StocksWithWidgetApp.swift */,
 				CB665A4D2A6720FB00D9623D /* ContentView.swift */,
 				CB7480392A672A140025DEBE /* Chart.swift */,
@@ -625,6 +627,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StocksWithWidget/StocksWithWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StocksWithWidget/Preview Content\"";
@@ -655,6 +658,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StocksWithWidget/StocksWithWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StocksWithWidget/Preview Content\"";
